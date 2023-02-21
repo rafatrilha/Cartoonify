@@ -2,11 +2,11 @@ import requests
 import io
 import streamlit as st
 
-st.set_page_config(page_title='Cartoon Yourself')
+st.set_page_config(page_title='Toonify Yourself')
 
-st.title('Cartoon Yourself')
+st.title('Toonify Yourself')
 
-uploaded_file = st.file_uploader('Choose an image file', type=['jpg',
+uploaded_file = st.file_uploader('Choose an image', type=['jpg',
                                  'jpeg', 'png'])
 
 cartoon_styles = [
@@ -30,7 +30,7 @@ cartoon_styles = [
     'artstyle',
     ]
 
-selected_style = st.selectbox('Select a cartoon style', cartoon_styles)
+selected_style = st.selectbox('Select a style', cartoon_styles)
 
 if st.button('Submit'):
 
